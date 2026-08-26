@@ -1,0 +1,12 @@
+{
+  "total_images_analyzed": 3,
+  "analysis_directory": "outputs_tcc_resnet18/shap_analysis",
+  "class_names": [
+    "Non Demented",
+    "Very mild Dementia",
+    "Mild Dementia",
+    "Moderate Dementia"
+  ],
+  "model_architecture": "ResNet18",
+  "example_usage": "\n# Example of future use:\nfrom SHAPInteractiveManager import SHAPInteractiveManager\n\nmodel = SafeResNet18(num_classes=4)\nmodel.load_state_dict(torch.load('outputs_tcc_resnet18/resnet18_model.pth'))\nshap_manager = SHAPInteractiveManager(model, DEVICE, class_names, SHAP_ANALYSIS_DIR)\n\n# Analyze new image\nimage_tensor, image_path = shap_manager.get_image_by_path(\"your_image.jpg\")\nresult = shap_manager.analyze_single_image(image_tensor, image_path, \"new_analysis\")\n        "
+}

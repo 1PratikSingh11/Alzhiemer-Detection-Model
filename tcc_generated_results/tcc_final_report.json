@@ -1,0 +1,25 @@
+{
+  "model_performance": {
+    "accuracy": 0.9889518741323461,
+    "precision_macro": 0.9786671781722066,
+    "recall_macro": 0.9953547037942398,
+    "f1_macro": 0.9868090219579833,
+    "mean_confidence": 0.9881534576416016
+  },
+  "dataset_info": {
+    "validation_samples": 17288,
+    "classes": [
+      "Non Demented",
+      "Very mild Dementia",
+      "Mild Dementia",
+      "Moderate Dementia"
+    ]
+  },
+  "model_architecture": "ResNet18",
+  "analysis_tools": [
+    "SHAP - Global interpretability",
+    "Grad-CAM - Attention visualization",
+    "MRI Explainer - Clinical interpretation",
+    "Difficulty Analyzer - Case difficulty ranking"
+  ]
+}
