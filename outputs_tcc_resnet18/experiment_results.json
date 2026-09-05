@@ -1,0 +1,50 @@
+{
+  "final_accuracy": 0.875,
+  "best_macro_f1": 0.8630952380952381,
+  "best_accuracy": 0.875,
+  "best_macro_precision": 0.9058441558441559,
+  "best_macro_recall": 0.875,
+  "best_val_loss": 0.41673033237457274,
+  "mean_confidence": 0.738195538520813,
+  "reported_benchmark_reference": {
+    "accuracy": 0.989,
+    "macro_precision": 0.9787,
+    "macro_recall": 0.9954,
+    "macro_f1": 0.9868,
+    "mean_confidence": 0.9882,
+    "validation_loss": 0.017,
+    "training_loss": 0.0099,
+    "confusion_matrix": {
+      "Non-Demented": 13271,
+      "Very Mild Dementia": 2753,
+      "Mild Dementia": 993,
+      "Moderate Dementia": 80
+    }
+  },
+  "history": {
+    "train_loss": [
+      0.7898053129514059,
+      0.13850782066583633
+    ],
+    "val_loss": [
+      1.0676580667495728,
+      0.41673033237457274
+    ],
+    "val_accuracy": [
+      0.475,
+      0.875
+    ],
+    "val_precision": [
+      0.33064516129032256,
+      0.9058441558441559
+    ],
+    "val_recall": [
+      0.475,
+      0.875
+    ],
+    "val_f1": [
+      0.358793324775353,
+      0.8630952380952381
+    ]
+  }
+}
