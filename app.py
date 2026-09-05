@@ -66,6 +66,9 @@ def load_system_model(model_path: str = "models/best_model.pth"):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = build_model(num_classes=4, pretrained=False).to(device)
 
+    if not os.path.exists(model_path) and os.path.exists("models/resnet18_model.pth"):
+        model_path = "models/resnet18_model.pth"
+
     if os.path.exists(model_path):
         model.load_weights(model_path, device)
     else:
