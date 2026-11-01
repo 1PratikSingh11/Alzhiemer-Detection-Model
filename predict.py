@@ -31,6 +31,9 @@ def predict_scan(
         raise FileNotFoundError(f"Input image not found: {image_path}")
 
     # 1. Load Model
+    if not os.path.exists(model_path) and os.path.exists("models/resnet18_model.pth"):
+        model_path = "models/resnet18_model.pth"
+
     model = build_model(num_classes=4, pretrained=False).to(dev)
     if os.path.exists(model_path):
         model.load_weights(model_path, dev)
