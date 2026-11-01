@@ -1,6 +1,7 @@
 # Alzheimer’s Disease Detection Model (ResNet-18 + SHAP)
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C.svg?style=flat&logo=pytorch)](https://pytorch.org/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/1PratikSingh11/Alzhiemer-Detection-Model/blob/main/Alzheimer_ResNet18_Training_Colab.ipynb)
 [![SHAP](https://img.shields.io/badge/Explainability-SHAP%20GradientExplainer-blue.svg)](https://github.com/slundberg/shap)
 [![Accuracy](https://img.shields.io/badge/Accuracy-98.90%25-brightgreen.svg)]()
 [![Macro%20F1](https://img.shields.io/badge/Macro%20F1-0.9868-brightgreen.svg)]()
